@@ -1,0 +1,106 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+body{
+  font-family: "Fredoka", sans-serif;;
+}
+ 
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1{
+  margin: 50px 0;
+  text-align: center;
+  color: red;
+  font-size: 3em;
+}
+
+p{
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 50px;
+}
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card-container > *{
+  float: left;
+  background-color: black;
+  margin-bottom: 20px;
+}
+
+.card-container > .card{
+  width: calc((100% - 40px) / 3);
+}
+
+.margin-x{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card > *{
+  float: left;
+}
+
+.card > .card-img-container > img{
+  height: 100px;
+  display: block;
+}
+
+.card > .card-info-container{
+  padding: 10px;
+  width: calc(100% - 100px);
+}
+
+.card > .card-info-container > *:not(a){
+  color: white;
+}
+
+.card > .card-info-container > a {
+  color: #6fc5e7;
+  text-decoration: none;
+}
+
+.card > .card-info-container > h3{
+  text-transform: uppercase;
+}
+ 
+.card > .card-info-container > h4 {
+  font-weight: normal;
+  margin: 9px 0;
+}
+
+
+/* DEBUG */
+
+/* .debug main{
+  background-color: bisque;
+}
+
+.debug main .container{
+  background-color: aquamarine;
+  border: 1px dashed red;
+  min-height: 300px;
+}
+
+.debug .card-container {
+  border: 1px dashed red;
+  background-color: chocolate;
+  min-height: 150px;
+}
+.debug .card-container > *{
+  border: 1px dashed red;
+  background-color: lightcoral;
+  min-height: 150px;
+} */
